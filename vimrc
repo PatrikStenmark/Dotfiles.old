@@ -270,3 +270,8 @@ function! OpenChangedFiles()
   endfor
 endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
+
+syntax enable
+set background=light
+colorscheme solarized
+
