@@ -3,7 +3,9 @@ require 'pathname'
 
 DotFiles = [
 	"oh-my-zsh",
-	"zshrc"
+	"zshrc",
+	"vim",
+	"vimrc"
 ]
 
 HomeDir = File.expand_path("~")
