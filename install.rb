@@ -3,7 +3,7 @@ require 'pathname'
 
 DotFiles = [
 	"oh-my-zsh",
-	".zshrc"
+	"zshrc"
 ]
 
 HomeDir = File.expand_path("~")
@@ -11,17 +11,25 @@ HomeDir = File.expand_path("~")
 puts HomeDir
 
 DotFiles.each do |filename|
-	puts File.expand_path(File.dirname(__FILE__))
 	path = Pathname.new(File.expand_path(File.dirname(__FILE__)) + "/" + filename)
-	puts path
-	source_path = HomeDir + "/." + filename
+	unless path.exist?
+		puts "#{filename} does not exists" 
+		next
+	end
 
-	puts "Symlinking #{source_path} to #{path}"
+	link_path = Pathname.new(HomeDir + "/." + filename)
 
-	if path.exist? && path.symlink?
+	puts "Symlinking #{link_path} to #{path}"
+
+	if link_path.symlink?
+		puts "#{filename} exists and is a symlink, assuming already installed"
+		next
+	end
+
+	if link_path.exist?
 		puts "#{filename} exists and is not a symlink"
 		next
 	end
 
-	File.symlink(taget_path, source_path)
+	File.symlink(path, link_path)
 end
