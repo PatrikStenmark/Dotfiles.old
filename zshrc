@@ -33,13 +33,12 @@ plugins=(git rails3 bundler rvm ruby )
 
 source $ZSH/oh-my-zsh.sh
 
-alias gst="git status"
+# Customize to your needs...
+export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
 alias gd="git diff"
-alias ga="git add"
 alias gci="git commit -v"
 alias gca="git commit -va"
 
-# Customize to your needs...
-export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
