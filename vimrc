@@ -3,6 +3,10 @@
 
 call pathogen#infect()
 
+if has('gui_running')
+  set guioptions=me
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -263,4 +267,3 @@ command! OpenChangedFiles :call OpenChangedFiles()
 syntax enable
 set background=light
 colorscheme solarized
-
