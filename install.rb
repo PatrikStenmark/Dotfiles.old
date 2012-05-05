@@ -5,7 +5,8 @@ DotFiles = [
 	"oh-my-zsh",
 	"zshrc",
 	"vim",
-	"vimrc"
+	"vimrc",
+    "pentadactylrc"
 ]
 
 HomeDir = File.expand_path("~")

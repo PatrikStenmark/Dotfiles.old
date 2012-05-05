@@ -1,0 +1,7 @@
+"1.0rc1
+
+loadplugins '\.(js|penta)$'
+group user
+map -count -modes=n,v d <Nop>
+
+" vim: set ft=pentadactyl:
