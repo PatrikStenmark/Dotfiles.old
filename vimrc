@@ -2,9 +2,13 @@
 " vim:set ts=2 sts=2 sw=2 expandtab:
 
 call pathogen#infect()
+syntax enable
+colorscheme solarized
 
 if has('gui_running')
+  set background=dark
   set guioptions=me
+  set guifont=Ubuntu\ Mono\ 9
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -266,6 +270,3 @@ function! OpenChangedFiles()
 endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
 
-syntax enable
-set background=light
-colorscheme solarized
