@@ -35,6 +35,7 @@ set cursorline
 set cmdheight=2
 set switchbuf=useopen
 set numberwidth=5
+set nu
 set showtabline=2
 set winwidth=79
 set shell=bash

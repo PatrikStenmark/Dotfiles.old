@@ -42,3 +42,7 @@ alias gca="git commit -va"
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+keychain ~/.ssh/id_rsa ~/.ssh/id_rsa-valtech
+. ~/.keychain/izanami-sh
+
