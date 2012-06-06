@@ -46,3 +46,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 keychain ~/.ssh/id_rsa ~/.ssh/id_rsa-valtech
 . ~/.keychain/izanami-sh
 
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export VIRTUALENVWRAPPER_PYTHON=python2.7
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
