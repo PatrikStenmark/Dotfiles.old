@@ -2,11 +2,13 @@
 require 'pathname'
 
 DotFiles = [
-	"oh-my-zsh",
-	"zshrc",
-	"vim",
-	"vimrc",
-    "pentadactylrc"
+  "oh-my-zsh",
+  "zshrc",
+  "zshrc.zephaniah",
+  "zshrc.izanami",
+  "vim",
+  "vimrc",
+  "pentadactylrc",
 ]
 
 HomeDir = File.expand_path("~")
