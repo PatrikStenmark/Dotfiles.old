@@ -33,6 +33,9 @@ plugins=(git rails3 ruby git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
+# This is a silly alias. Begone
+unalias gl
+
 # Customize to your needs...
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
