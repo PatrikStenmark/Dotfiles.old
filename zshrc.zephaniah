@@ -1,14 +1,17 @@
-eval `keychain --eval --agents ssh --inherit any id_rsa id_dsa.vhs id_rsa.heroku`
+eval `keychain --eval --agents ssh --inherit any id_rsa id_dsa.vhs id_rsa.heroku id_dsa.ongame`
 
 #export PATH=Users/patrikstenmark/.rvm/bin:/Users/patrikstenmark/.local_local/play/:/Users/patrikstenmark/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/texlive/2011/bin/x86_64-darwin
 export WORKON_HOME=$HOME/.virtualenvs
 export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=128m"
 export EDITOR="mvim"
 
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/share/python/virtualenvwrapper.sh
 
 [[ -s "/Users/patrikstenmark/.rvm/scripts/rvm" ]] && source "/Users/patrikstenmark/.rvm/scripts/rvm"
 
 alias gs="echo you meant gst dammnit"
 alias gd="git diff"
 alias gl="git l"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH

@@ -43,8 +43,11 @@ alias gd="git diff"
 alias gci="git commit -v"
 alias gca="git commit -va"
 
-export PATH=$PATH:$HOME/.local/bin
 export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
+PATH=$PATH:$HOME/.local/bin
+PATH=$PATH:/usr/local/share/python # Brewed python path
+
+export PATH
 
 if [ -f ~/.zshrc.$(hostname -s) ]; then
   source ~/.zshrc.$(hostname -s)
