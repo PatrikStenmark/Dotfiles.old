@@ -41,6 +41,7 @@ alias gci="git commit -v"
 alias gca="git commit -va"
 
 export PATH=$PATH:$HOME/.local/bin
+export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
 
 if [ -f ~/.zshrc.$(hostname -s) ]; then
   source ~/.zshrc.$(hostname -s)
