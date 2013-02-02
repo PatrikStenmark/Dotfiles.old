@@ -29,7 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3 bundler rvm ruby git-flow)
+plugins=(git rails3 ruby git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,8 +39,6 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 alias gd="git diff"
 alias gci="git commit -v"
 alias gca="git commit -va"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export PATH=$PATH:$HOME/.local/bin
 
