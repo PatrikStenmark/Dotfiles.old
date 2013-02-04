@@ -45,9 +45,12 @@ alias gca="git commit -va"
 
 export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
 PATH=$PATH:$HOME/.local/bin
-PATH=$PATH:/usr/local/share/python # Brewed python path
+PATH=/usr/local/share/python:$PATH # Brewed python path
 
 export PATH
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 if [ -f ~/.zshrc.$(hostname -s) ]; then
   source ~/.zshrc.$(hostname -s)
