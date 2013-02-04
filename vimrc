@@ -8,7 +8,7 @@ colorscheme solarized
 if has('gui_running')
   set background=dark
   set guioptions=me
-  set guifont=Ubuntu\ Mono\ 9
+  set guifont=Inconsolata:h14
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -273,5 +273,18 @@ command! OpenChangedFiles :call OpenChangedFiles()
 
 map <leader>gt <C-]>
 map <leader>pt :CtrlPTag<cr>
+
+noremap <D-1> 1gt
+noremap <D-2> 2gt
+noremap <D-3> 3gt
+noremap <D-4> 4gt
+noremap <D-5> 5gt
+noremap <D-6> 6gt
+noremap <D-7> 7gt
+noremap <D-8> 8gt
+noremap <D-9> 9gt
+noremap <D-9> 10gt
+noremap <D-M-right> gt
+noremap <D-M-left> gT
 
 
