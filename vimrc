@@ -271,3 +271,7 @@ function! OpenChangedFiles()
 endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
 
+map <leader>gt <C-]>
+map <leader>pt :CtrlPTag<cr>
+
+
