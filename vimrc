@@ -115,6 +115,8 @@ imap <c-c> <esc>
 " Clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
 
+let g:ctrlp_custom_ignore = ".git"
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
@@ -289,4 +291,4 @@ noremap <D-9> 10gt
 noremap <D-M-right> gt
 noremap <D-M-left> gT
 
-
+map <leader>ct :Tabularize /\|<cr>
