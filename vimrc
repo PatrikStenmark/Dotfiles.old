@@ -245,3 +245,5 @@ noremap <D-M-right> gt
 noremap <D-M-left> gT
 
 map <leader>ct :Tabularize /\|<cr>
+cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+
