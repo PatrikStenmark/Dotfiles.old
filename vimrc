@@ -221,12 +221,11 @@ function! RunNearestTest()
     call RunTestFile(":" . spec_line_number . " -b")
 endfunction
 
-map <leader>t :call RunTestFile()<cr>
-map <leader>T :call RunNearestTest()<cr>
-map <leader>a :call RunTests('')<cr>
-map <leader>c :w\|:!script/features<cr>
-map <leader>w :w\|:!script/features --profile wip<cr>
-
+map <leader>tt :call RunTestFile()<cr>
+map <leader>tT :call RunNearestTest()<cr>
+map <leader>ta :call RunTests('')<cr>
+map <leader>tc :w\|:!script/features<cr>
+map <leader>tw :w\|:!script/features --profile wip<cr>
 
 map <leader>gt <C-]>
 map <leader>pt :CtrlPTag<cr>
