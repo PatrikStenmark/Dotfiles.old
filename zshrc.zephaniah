@@ -5,6 +5,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=128m"
 export EDITOR="mvim"
 
+export WAP_FRONTEND_PATH="/Users/patrikstenmark/Development/Valtech/OnGame/web-portal/frontend"
+eval "$($HOME/Development/Valtech/OnGame/web-portal/wap/bin/wap init -)"
+
 source /usr/local/share/python/virtualenvwrapper.sh
 
 [[ -s "/Users/patrikstenmark/.rvm/scripts/rvm" ]] && source "/Users/patrikstenmark/.rvm/scripts/rvm"
