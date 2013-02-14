@@ -33,6 +33,7 @@ plugins=(git rails3 ruby git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
+unsetopt correctall
 # This is a silly alias. Begone
 unalias gl
 
