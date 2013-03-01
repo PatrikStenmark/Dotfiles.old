@@ -242,6 +242,7 @@ noremap <D-9> 9gt
 noremap <D-9> 10gt
 noremap <D-M-right> gt
 noremap <D-M-left> gT
+nnoremap <C-b> :CtrlPBuffer<cr>
 
 map <leader>ct :Tabularize /\|<cr>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
