@@ -7,9 +7,9 @@ export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=128m"
 export EDITOR="mvim"
 
 export WAP_FRONTEND_PATH="/Users/patrikstenmark/Development/Valtech/OnGame/web-portal/frontend"
-eval "$($HOME/Development/Valtech/OnGame/web-portal/wap/bin/wap init -)"
+#eval "$($HOME/Development/Valtech/OnGame/web-portal/wap/bin/wap init -)"
 
-source /usr/local/share/python/virtualenvwrapper.sh
+#source /usr/local/share/python/virtualenvwrapper.sh
 
 alias gs="echo you meant gst dammnit"
 alias gd="git diff"
