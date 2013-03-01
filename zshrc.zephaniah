@@ -1,4 +1,6 @@
-eval `keychain --eval --agents ssh --inherit any id_rsa id_dsa.vhs id_rsa.heroku id_dsa.ongame`
+source /opt/boxen/env.sh
+
+eval `keychain --eval --agents ssh --inherit any id_dsa id_dsa.ongame`
 
 export WORKON_HOME=$HOME/.virtualenvs
 export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=128m"
