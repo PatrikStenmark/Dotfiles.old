@@ -6,7 +6,7 @@ syntax enable
 colorscheme solarized
 
 if has('gui_running')
-  set background=dark
+  set background=light
   set guioptions=me
   set guifont=Inconsolata:h14
 endif
@@ -228,7 +228,6 @@ map <leader>tc :w\|:!script/features<cr>
 map <leader>tw :w\|:!script/features --profile wip<cr>
 
 map <leader>gt <C-]>
-map <leader>pt :CtrlPTag<cr>
 
 noremap <D-1> 1gt
 noremap <D-2> 2gt
@@ -243,6 +242,7 @@ noremap <D-9> 10gt
 noremap <D-M-right> gt
 noremap <D-M-left> gT
 nnoremap <C-b> :CtrlPBuffer<cr>
+nnoremap <C-t> :CtrlPTag<cr>
 
 map <leader>ct :Tabularize /\|<cr>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
