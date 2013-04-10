@@ -53,6 +53,8 @@ export PATH
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+export EDITOR="mvim -f"
+
 if [ -f ~/.zshrc.$(hostname -s) ]; then
   source ~/.zshrc.$(hostname -s)
 fi

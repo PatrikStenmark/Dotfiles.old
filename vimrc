@@ -32,6 +32,8 @@ set incsearch
 set hlsearch
 " make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
+" Make * act like I expect it
+noremap * g*
 " highlight current line
 set cursorline
 set cmdheight=2
@@ -243,6 +245,7 @@ noremap <D-M-right> gt
 noremap <D-M-left> gT
 nnoremap <C-b> :CtrlPBuffer<cr>
 nnoremap <C-t> :CtrlPTag<cr>
+let g:ctrlp_working_path_mode = 0
 
 map <leader>ct :Tabularize /\|<cr>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))

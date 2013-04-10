@@ -4,7 +4,6 @@ eval `keychain --eval --agents ssh --inherit any id_dsa id_dsa.ongame`
 
 export WORKON_HOME=$HOME/.virtualenvs
 export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=128m"
-export EDITOR="mvim"
 
 export WAP_FRONTEND_PATH="/Users/patrikstenmark/Development/Valtech/OnGame/web-portal/frontend"
 #eval "$($HOME/Development/Valtech/OnGame/web-portal/wap/bin/wap init -)"
