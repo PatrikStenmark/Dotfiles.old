@@ -43,6 +43,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 alias gd="git diff"
 alias gci="git commit -v"
 alias gca="git commit -va"
+alias grp="git rebase -p"
 
 export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
 PATH=$PATH:$HOME/.local/bin

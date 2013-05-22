@@ -6,7 +6,7 @@ syntax enable
 colorscheme solarized
 
 if has('gui_running')
-  set background=light
+  set background=dark
   set guioptions=me
   set guifont=Inconsolata:h14
 endif
