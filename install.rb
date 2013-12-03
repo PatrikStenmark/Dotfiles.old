@@ -9,6 +9,7 @@ DotFiles = [
   "vim",
   "vimrc",
   "pentadactylrc",
+  "config/fish",
 ]
 
 HomeDir = File.expand_path("~")
@@ -38,3 +39,4 @@ DotFiles.each do |filename|
 
 	File.symlink(path, link_path)
 end
+
