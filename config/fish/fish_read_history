@@ -1,0 +1,2 @@
+- cmd: function nj-cms --description 'Start a WAP CMS in NJ env'\nset -xg FRONTEND_URL hamster\nset -xg MEMCACHE_SERVERS localhost:11211\nset -xg LOG_LEVEL 10\nset -xg RAILS_ENV nj\nrs -p 7500 -P tmp/pids/nj-server.pid\n\nset -e FRONTEND_URL\nset -e MEMCACHE_SERVERS\nset -e LOG_LEVEL\nset -e RAILS_ENV\n\nend
+   when: 1378476774
