@@ -119,7 +119,24 @@ imap <c-c> <esc>
 " Clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
 
+nnoremap <C-b> :CtrlPBuffer<cr>
+nnoremap <C-t> :CtrlPTag<cr>
 let g:ctrlp_custom_ignore = ".git"
+let g:ctrlp_switch_buffer = "e"
+let g:ctrlp_working_path_mode = 0
+
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
 
 map <leader>gr :topleft :split config/routes.rb<cr>
 function! ShowRoutes()
@@ -214,9 +231,6 @@ noremap <D-9> 9gt
 noremap <D-9> 10gt
 noremap <D-M-right> gt
 noremap <D-M-left> gT
-nnoremap <C-b> :CtrlPBuffer<cr>
-nnoremap <C-t> :CtrlPTag<cr>
-let g:ctrlp_working_path_mode = 0
 
 map <leader>ct :Tabularize /\|<cr>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
