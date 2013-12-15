@@ -48,6 +48,7 @@ alias grp="git rebase -p"
 export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
 PATH=$PATH:$HOME/.local/bin
 PATH=/usr/local/share/python:$PATH # Brewed python path
+PATH=$PATH:/usr/local/share/npm/bin
 
 export PATH
 
