@@ -96,6 +96,8 @@ augroup vimrcEx
 " Indent p tags
   autocmd FileType html,eruby if g:html_indent_tags !~ '\\|p\>' | let g:html_indent_tags .= '\|p\|li\|dt\|dd' | endif
 
+  autocmd BufRead Gruntfile setf javascript
+
 " Don't syntax highlight markdown because it's often wrong
   autocmd! FileType mkd setlocal syn=off
 augroup END
